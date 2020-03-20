@@ -22,20 +22,18 @@
                       <th>NO</th>
                       <th>RUMUS</th>
                       <th>GAMBAR RUMUS</th>
-                      <th>KATEGORI</th>
                       <th>AKSI</th>
                     </tr>
                   </thead>
                   <tbody>
                     <?php
                       $no=1; 
-                      foreach ($hasil as $rms): 
+                      foreach ($rumus_mm as $rms): 
                     ?>
                     <tr class="text-center">
                       <td><?=$no++?></td>
                       <td><?=$rms->nama_rms?></td>
                       <td><img src="<?php echo base_url('upload/rumus/'.$rms->det_rms)?>" width="100" alt="foto"></td>
-                      <td><?=$rms->nama_ktg?></td>
                       <td width="250">
 											<a href="<?php echo base_url().'index.php/admin/Rumus/ubhrms/'.$rms->id_rms; ?>"
 											 class="btn btn-small text-primary"><i class="fas fa-edit"></i> Edit</a>

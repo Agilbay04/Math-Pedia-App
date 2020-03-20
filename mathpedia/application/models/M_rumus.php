@@ -2,21 +2,17 @@
 
 class M_rumus extends CI_Model
 {
-    public function viewALL()
+    public function select_all()
     {
+        // return $this->db->get('rumus_mm');
         $this->db->select('*');
         $this->db->from('rumus_mm');
-        $this->db->join('kategori','kategori.id_kategori=rumus_mm.id_kategori');
+
         $data = $this->db->get();
+
         return $data->result();
     }
-
-    public function getKategori()
-    {
-        $data = $this->db->get('kategori');
-        return $data->result_array();
-    }
-
+    
     public function input_rms($data,$table){
 		$this->db->insert($table,$data);
     }

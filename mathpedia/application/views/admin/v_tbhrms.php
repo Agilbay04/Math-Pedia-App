@@ -16,14 +16,6 @@
         <label for="exampleFormControlFile1">Gambar Rumus</label>
         <input type="file" class="form-control-file" id="rumus" name="rumus">
       </div>
-      <div class="form-group">
-        <label for="kategori">Kategori</label>
-        <select class="form-control" id="exampleFormControlSelect1" name="ktg">
-          <?php foreach($kategori as $ktg) : ?>
-          <option value="<?php echo $ktg['id_kategori'];?>"><?php echo $ktg['nama_ktg'];?></option>
-          <?php endforeach; ?>
-        </select>
-      </div>
       <button type="submit" class="btn btn-success btn-block">Simpan</button>
       <a href="<?php echo base_url().'index.php/admin/Rumus/rumus';?>" type="submit" class="btn btn-danger btn-block">Batal</a>
     <?php echo form_close(); ?>
