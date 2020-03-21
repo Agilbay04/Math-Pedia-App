@@ -44,10 +44,10 @@
                 </div>
                 <form action="<?php echo base_url('admin/Login/aksi_login'); ?>" method="post">
                   <div class="form-group">
-                    <input type="text" class="form-control form-control-user" id="username" name="username" placeholder="Masukkan Username Anda">
+                    <input type="text" class="form-control form-control-user" id="username" name="username_adm" placeholder="Masukkan Username Anda">
                   </div>
                   <div class="form-group">
-                    <input type="password" class="form-control form-control-user" id="password" name="password" placeholder="Password">
+                    <input type="password" class="form-control form-control-user" id="password" name="password_adm" placeholder="Password">
                   </div>
                   <button type="submit" class="btn btn-primary btn-user btn-block">
                     Login

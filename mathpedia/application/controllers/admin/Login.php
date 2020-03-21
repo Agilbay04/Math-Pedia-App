@@ -16,22 +16,16 @@ defined('BASEPATH') OR exit('No direct script acces allowed');
         }
         
         function aksi_login(){
-            // berikut kode untuk merekam data yang dikirim melalui post
-            $username = $this->input->post('username');
-            $password = $this->input->post('password');
-            // berikut menyimpan data pada array untuk nantinya diproses ke dalam model
-            $where = array(
-                'username_adm' => $username,
-                'password_adm' => $password
-                );
-            // berikut menjalankan method cek_login pada model m_login
-            $cek = $this->M_login->cek_login("admin",$where)->num_rows();
-            if($cek > 0){
-
-                //  membuat session dengan index 'nama' yang berisi username dan 'status' berisi login
+            $data = $this->input->post();
+            $username_adm = $data['username_adm'];
+            $password_adm = $data['password_adm'];
+            $cek = $this->M_login->cek_login($username_adm,$password_adm);
+            if(!empty($cek)){
+                foreach ($cek as $c)
                 $data_session = array(
-                    'username_adm' => $username,
-                    'foto_adm' => $foto,
+                    'id_adm' => $c->id_adm,
+                    'username_adm' => $c->username_adm,
+                    'foto_adm' => $c->foto_adm,
                     'status' => "login"
                     );
                 // menambahkan sebuah session userdata berisi array diatas

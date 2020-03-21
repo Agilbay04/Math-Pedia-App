@@ -2,8 +2,14 @@
 defined('BASEPATH') OR exit('No direct script acces allowed');
 
     class M_login extends CI_Model {
-        function cek_login($table,$where){		
-            return $this->db->get_where($table,$where);
+        function cek_login($username_adm, $password_adm){		 
+            $this->db->select('id_adm,username_adm,foto_adm');
+            $this->db->from('admin');
+            $this->db->where('username_adm', $username_adm);
+            $this->db->where('password_adm', $password_adm);
+            $this->db->limit(1);
+            $query = $this->db->get();
+            return $query->result();
         }
         // public function login($post)
         // {
