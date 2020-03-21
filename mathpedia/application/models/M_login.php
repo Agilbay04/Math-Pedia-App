@@ -3,7 +3,7 @@ defined('BASEPATH') OR exit('No direct script acces allowed');
 
     class M_login extends CI_Model {
         function cek_login($username_adm, $password_adm){		 
-            $this->db->select('id_adm,username_adm,foto_adm');
+            $this->db->select('id_adm,username_adm,foto_adm,status');
             $this->db->from('admin');
             $this->db->where('username_adm', $username_adm);
             $this->db->where('password_adm', $password_adm);
