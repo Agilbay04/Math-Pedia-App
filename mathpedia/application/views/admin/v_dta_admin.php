@@ -7,7 +7,7 @@
               <h6 class="m-0 font-weight-bold text-primary">Data Admin</h6>
             </div>
             <div class="card-header py-3">
-            <a href="<?php echo base_url(). 'index.php/admin/Admin/tbhadm'; ?>" class="btn btn-success btn-icon-split btn-sm">
+            <a href="<?php echo base_url(). 'admin/Admin/tbhadm'; ?>" class="btn btn-success btn-icon-split btn-sm">
               <span class="icon text-white-50">
                 <i class="fas fa-plus"></i>
               </span>
@@ -45,9 +45,9 @@
                       <td><?=$adm->username_adm?></td>
                       <td><?=$adm->status?></td>
                       <td width="250">
-                        <a href="<?php echo base_url().'index.php/admin/Admin/ubhadm/'.$adm->id_adm; ?>"
+                        <a href="<?php echo base_url().'admin/Admin/ubhadm/'.$adm->id_adm; ?>"
                         class="btn btn-small text-primary"><i class="fas fa-edit"></i> Edit</a>
-                        <a href="<?php echo base_url().'index.php/admin/Admin/hapusadm/'.$adm->id_adm; ?>" class="btn btn-small text-danger"><i class="fas fa-trash"></i> Hapus</a>
+                        <a href="<?php echo base_url().'admin/Admin/hapusadm/'.$adm->id_adm; ?>" class="btn btn-small text-danger"><i class="fas fa-trash"></i> Hapus</a>
 										  </td>
                     </tr>
                     <?php endforeach;?>

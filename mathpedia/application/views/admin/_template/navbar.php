@@ -5,7 +5,7 @@
     <ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
 
       <!-- Sidebar - Brand -->
-      <a class="sidebar-brand d-flex align-items-center justify-content-center" href="<?php echo('index') ?>">
+      <a class="sidebar-brand d-flex align-items-center justify-content-center" href="<?php echo base_url('admin/Mathpedia/index') ?>">
         <div class="sidebar-brand-icon rotate-n-15">
           <i class="fas fa-laugh-wink"></i>
         </div>
@@ -17,7 +17,7 @@
 
       <!-- Nav Item - Dashboard -->
       <li class="nav-item active">
-        <a class="nav-link" href="<?php echo('index')?>">
+        <a class="nav-link" href="<?php echo base_url('admin/Mathpedia/index') ?>">
           <i class="fas fa-fw fa-tachometer-alt"></i>
           <span>Dashboard</span></a>
       </li>
@@ -39,11 +39,11 @@
         <div id="collapseMaster" class="collapse" aria-labelledby="headingMaster" data-parent="#accordionSidebar">
           <div class="bg-white py-2 collapse-inner rounded">
             <h6 class="collapse-header">Data Master:</h6>
-            <a class="collapse-item" href="<?php echo('Mathpedia/admin')?>">
+            <a class="collapse-item" href="<?php echo base_url('admin/Admin/admin')?>">
             <i class="fas fa-fw fa-table"></i>
               Data Admin
             </a>
-            <a class="collapse-item" href="<?php echo('Mathpedia/rumus')?>">
+            <a class="collapse-item" href="<?php echo base_url('admin/Rumus/rumus')?>">
             <i class="fas fa-fw fa-table"></i>
               Data Rumus
             </a>
@@ -85,12 +85,12 @@
             <!-- Nav Item - User Information -->
             <li class="nav-item dropdown no-arrow">
               <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                <span class="mr-2 d-none d-lg-inline text-gray-600 small">Valerie Luna</span>
-                <img class="img-profile rounded-circle" src="https://source.unsplash.com/QAB-WJcbgJk/60x60">
+                <span class="mr-2 d-none d-lg-inline text-gray-600 small"><?php echo $this->session->userdata('username_adm');?></span>
+                <img class="img-profile rounded-circle" src="<?php echo $this->session->userdata('foto_adm');?>">
               </a>
               <!-- Dropdown - User Information -->
               <div class="dropdown-menu dropdown-menu-right shadow animated--grow-in" aria-labelledby="userDropdown">
-                <a class="dropdown-item" href="#" data-toggle="modal" data-target="#logoutModal">
+                <a class="dropdown-item" href="<?php echo base_url('admin/Login/index')?>" data-toggle="" data-target="">
                   <i class="fas fa-sign-in-alt fa-sm fa-fw mr-2 text-gray-400"></i>
                   Login
                 </a>

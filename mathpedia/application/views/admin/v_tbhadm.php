@@ -43,7 +43,7 @@
         <input type="text" class="form-control" id="hak" name="hak" value="Admin" hidden>
       </div>
       <button type="submit" class="btn btn-success btn-block">Simpan</button>
-      <a href="<?php echo base_url().'index.php/admin/Admin/admin';?>" type="submit" class="btn btn-danger btn-block">Batal</a>
+      <a href="<?php echo base_url().'admin/Admin/admin';?>" type="submit" class="btn btn-danger btn-block">Batal</a>
     <?php echo form_close(); ?>
     </div>
   </div>

@@ -4,8 +4,9 @@ defined('BASEPATH') OR exit('No direct script acces allowed');
     class Login extends CI_Controller {
         public function __construct()
         {
-            parent::__construct('M_login');
+            parent::__construct();
             $this->load->helper('url');
+            $this->load->model('M_login');
         }
 
         // fungsi yang akan dijalankan pertama kali dan dijalankan otomatis
@@ -30,7 +31,6 @@ defined('BASEPATH') OR exit('No direct script acces allowed');
                 //  membuat session dengan index 'nama' yang berisi username dan 'status' berisi login
                 $data_session = array(
                     'username_adm' => $username,
-                    // 'status' => $status
                     'status' => "login"
                     );
                 // menambahkan sebuah session userdata berisi array diatas
@@ -47,7 +47,7 @@ defined('BASEPATH') OR exit('No direct script acces allowed');
             //  baris kode yang akan menghapus session yang ada
             $this->session->sess_destroy();
             //  baris kode yang mengarahkan pengguna ke controller login
-            redirect(base_url('admin/Login/index'));
+            redirect(base_url('admin/Mathpedia/index'));
         }
 
         // public function admin()

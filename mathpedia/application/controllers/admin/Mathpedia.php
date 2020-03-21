@@ -11,7 +11,6 @@ class Mathpedia extends CI_Controller {
     {   
         $this->load->view("admin/_template/head.php");
         $this->load->view("admin/_template/navbar.php");
-        $this->load->view("admin/_template/alert.php");
         $this->load->view("admin/v_home.php");
         $this->load->view("admin/_template/footer.php");
         $this->load->view("admin/_template/scrolltop.php");

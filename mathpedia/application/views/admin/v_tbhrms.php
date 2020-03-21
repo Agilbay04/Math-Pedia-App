@@ -17,7 +17,7 @@
         <input type="file" class="form-control-file" id="rumus" name="rumus">
       </div>
       <button type="submit" class="btn btn-success btn-block">Simpan</button>
-      <a href="<?php echo base_url().'index.php/admin/Rumus/rumus';?>" type="submit" class="btn btn-danger btn-block">Batal</a>
+      <a href="<?php echo base_url().'admin/Rumus/rumus';?>" type="submit" class="btn btn-danger btn-block">Batal</a>
     <?php echo form_close(); ?>
     </div>
   </div>

@@ -7,7 +7,7 @@
               <h6 class="m-0 font-weight-bold text-primary">Data Rumus Matematika</h6>
             </div>
             <div class="card-header py-3">
-            <a href="<?php echo base_url(). 'index.php/admin/Rumus/tbhrms'; ?>" class="btn btn-success btn-icon-split btn-sm">
+            <a href="<?php echo base_url(). 'admin/Rumus/tbhrms'; ?>" class="btn btn-success btn-icon-split btn-sm">
               <span class="icon text-white-50">
                 <i class="fas fa-plus"></i>
               </span>
@@ -35,9 +35,9 @@
                       <td><?=$rms->nama_rms?></td>
                       <td><img src="<?php echo base_url('upload/rumus/'.$rms->det_rms)?>" width="100" alt="foto"></td>
                       <td width="250">
-											<a href="<?php echo base_url().'index.php/admin/Rumus/ubhrms/'.$rms->id_rms; ?>"
+											<a href="<?php echo base_url().'admin/Rumus/ubhrms/'.$rms->id_rms; ?>"
 											 class="btn btn-small text-primary"><i class="fas fa-edit"></i> Edit</a>
-											<a href="<?php echo base_url().'index.php/admin/Rumus/hapusrms/'.$rms->id_rms; ?>" class="btn btn-small text-danger"><i class="fas fa-trash"></i> Hapus</a>
+											<a href="<?php echo base_url().'admin/Rumus/hapusrms/'.$rms->id_rms; ?>" class="btn btn-small text-danger"><i class="fas fa-trash"></i> Hapus</a>
 										</td>
                     </tr>
                     <?php endforeach;?>
