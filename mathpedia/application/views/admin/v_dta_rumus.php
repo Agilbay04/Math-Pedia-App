@@ -37,7 +37,10 @@
                       <td width="250">
 											<a href="<?php echo base_url().'admin/Rumus/ubhrms/'.$rms->id_rms; ?>"
 											 class="btn btn-small text-primary"><i class="fas fa-edit"></i> Edit</a>
-											<a href="<?php echo base_url().'admin/Rumus/hapusrms/'.$rms->id_rms; ?>" class="btn btn-small text-danger"><i class="fas fa-trash"></i> Hapus</a>
+											<a href="<?php echo base_url().'admin/Rumus/hapusrms/'.$rms->id_rms; ?>" 
+                        class="btn btn-small text-danger"><i class="fas fa-trash"></i> Hapus</a>
+											<a href="<?php echo base_url().'admin/Lihat/rms/'.$rms->id_rms; ?>" 
+                        class="btn btn-small text-success"><i class="fas fa-info"></i> Lihat Rumus</a>
 										</td>
                     </tr>
                     <?php endforeach;?>

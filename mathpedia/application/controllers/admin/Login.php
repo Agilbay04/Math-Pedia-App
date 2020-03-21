@@ -31,6 +31,7 @@ defined('BASEPATH') OR exit('No direct script acces allowed');
                 //  membuat session dengan index 'nama' yang berisi username dan 'status' berisi login
                 $data_session = array(
                     'username_adm' => $username,
+                    'foto_adm' => $foto,
                     'status' => "login"
                     );
                 // menambahkan sebuah session userdata berisi array diatas

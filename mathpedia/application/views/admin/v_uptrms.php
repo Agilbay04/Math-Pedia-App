@@ -10,11 +10,11 @@
         <input type="text" class="form-control" id="id" name="id" value="<?php echo $rms->id_rms?>" hidden>
       </div>
       <div class="form-group">
-        <label for="exampleFormControlInput1">Nama Lengkap</label>
+        <label for="exampleFormControlInput1">Nama Rumus</label>
         <input type="text" class="form-control" id="nama" name="nama" value="<?php echo $rms->nama_rms?>">
       </div>
       <div class="form-group">
-        <label for="exampleFormControlFile1">Foto Profil</label>
+        <label for="exampleFormControlFile1">Gambar Rumus</label>
         <div>
           <img src="<?php echo base_url('upload/rumus/'.$rms->det_rms);?>" width="300" alt="">
         </div>
