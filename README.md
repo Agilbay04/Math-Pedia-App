@@ -12,7 +12,7 @@ Fitur :
   2. Datatable
   
 Akun Login :
-  1. username : fulan / password : 1234
+  1. username : fulan123 / password : 1234
 
 ## Cara Penggunaan
 1. Jalankan XAMPP anda atau yang lain
